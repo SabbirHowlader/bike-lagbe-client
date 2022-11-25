@@ -49,12 +49,12 @@ const Login = () => {
                         {errors.password && <p className='text-red-600'>{errors.password?.message}</p>}
                     </div>
                     
-                    <input className='btn btn-success w-full' value="Login" type="submit" />
+                    <input className='btn btn-primary w-full' value="Login" type="submit" />
                     <div>
                         {/* {loginError && <p className='text-red-600'>{loginError}</p>} */}
                     </div>
                 </form>
-                <p>New to Bike Lagbe? <Link className='text-secondary' to='/register'>Create new account</Link></p>
+                <p>New to Bike Lagbe? <Link className='text-secondary' to='/signup'>Create new account</Link></p>
                 <div className="divider">OR</div>
                 <button className='btn btn-success w-full'>CONTINUE WITH GOOGLE</button>
             </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="p-10 my-10 bg-base-300 ">
+        <footer className="p-10 mt-10 bg-base-300 ">
             <div className='footer flex justify-around'>
                 <div>
                     <span className="footer-title">Services</span>
