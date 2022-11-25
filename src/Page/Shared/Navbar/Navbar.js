@@ -8,7 +8,7 @@ const Navbar = () => {
     <React.Fragment>
         <li><Link to="/" className='rounded-full'>Home</Link></li>
         <li><Link to="/" className='rounded-full'>Blog</Link></li>
-        <li><Link to="/" className='rounded-full'>About</Link></li>
+        <li><Link to="/login" className='rounded-full'>Login</Link></li>
 
         {/* {user?.uid ?
             <>
