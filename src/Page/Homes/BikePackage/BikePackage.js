@@ -33,9 +33,9 @@ const BikePackage = () => {
     return (
         <div className='my-10'>
             <div>
-                <h3 className='text-4xl font-bold text-success text-center mb-6'>Our Package</h3>
+                <h3 className='text-4xl font-bold text-success text-center mb-10'>Our Package</h3>
             </div>
-            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5'>
                 {
                     bikePackage.map(bike => <BikeDetails
                      key={bike.id}
