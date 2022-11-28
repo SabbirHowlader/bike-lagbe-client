@@ -1,47 +1,45 @@
 import React from 'react';
-import BikeDetails from './BikeDetails';
+import { Link } from 'react-router-dom';
 
 const BikePackage = () => {
-    const bikePackage =
-        [
-            {
-                "id": "1",
-                "discription": "We Collect old simple bike and sell our Customer in low price.",
-                "name": "Old Simple Bike",
-                "rating": 4.8,
-                "sell": 30,
-                "img": "https://i.pinimg.com/originals/b1/0a/58/b10a58650281c867c5153a2049d920d7.jpg"
-            },
-            {
-                "id": "2",
-                "discription": "You get here all old standard bike.",
-                "name": "Old Standard Bike",
-                "rating": 4.9,
-                "sell": 25,
-                "img": "https://i.pinimg.com/originals/dd/dc/7d/dddc7dae7ab2e4875618c743ed387cb2.jpg"
-            },
-            {
-                "id": "3",
-                "discription": "premium and good quality old bike collection",
-                "name": "Old Premium Bike",
-                "rating": 5.00,
-                "sell": 45,
-                "img": "https://img.freepik.com/premium-photo/old-bike-isolated-background-3d-rendering-illustration_494250-648.jpg?w=2000"
-            }
-        ]
 
     return (
-        <div className='my-10'>
-            <div>
-                <h3 className='text-4xl font-bold text-success text-center mb-10'>Our Package</h3>
-            </div>
-            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5'>
-                {
-                    bikePackage.map(bike => <BikeDetails
-                     key={bike.id}
-                     bike={bike}
-                    ></BikeDetails>)
-                }
+        <div > 
+            <h2 className='font-bold text-center text-5xl text-success'>Our Product</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-10'>
+                <div className="card bg-base-100 shadow-xl">
+                    <figure className="px-2 pt-2">
+                        <img src="https://i.pinimg.com/originals/b1/0a/58/b10a58650281c867c5153a2049d920d7.jpg" alt="Shoes" className="rounded-xl"  style={{height:200, width:350}}/>
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">Old Simple Bike</h2>
+                        <div className="card-actions">
+                            <button className="btn btn-primary"><Link to='/product'>See All</Link></button>
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-base-100 shadow-xl">
+                    <figure className="px-2 pt-2">
+                        <img src="https://i.pinimg.com/originals/dd/dc/7d/dddc7dae7ab2e4875618c743ed387cb2.jpg" alt="Shoes" className="rounded-xl" style={{height:200, width:350}} />
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">Old Standard Bike</h2>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">See All</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-base-100 shadow-xl">
+                    <figure className="px-2 pt-2">
+                        <img src="https://img.freepik.com/premium-photo/old-bike-isolated-background-3d-rendering-illustration_494250-648.jpg?w=2000" alt="Shoes" className="rounded-xl" style={{height:200, width:350}}/>
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">Old Premium Bike</h2>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">See All</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
