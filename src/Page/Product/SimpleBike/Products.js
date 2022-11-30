@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Products = ({ product, setProduct }) => {
     const { name, location, oldPrice, orginalPrice, useYear, time, img, SellerName } = product;

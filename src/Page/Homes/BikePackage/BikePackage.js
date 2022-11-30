@@ -25,7 +25,7 @@ const BikePackage = () => {
                     <div className="card-body items-center text-center">
                         <h2 className="card-title font-bold mb-6 text-3xl">Used Standard Bike</h2>
                         <div className="card-actions">
-                            <button className="btn btn-primary rounded-lg"><Link to="/standardBike">See All</Link></button>
+                            <button className="btn btn-primary rounded-lg"><Link to='/product'>See All</Link></button>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const BikePackage = () => {
                     <div className="card-body items-center text-center">
                         <h2 className="card-title font-bold mb-6 text-3xl">Used Premium Bike</h2>
                         <div className="card-actions">
-                            <button className="btn btn-primary rounded-lg">See All</button>
+                            <button className="btn btn-primary rounded-lg"><Link to='/product'>See All</Link></button>
                         </div>
                     </div>
                 </div>
