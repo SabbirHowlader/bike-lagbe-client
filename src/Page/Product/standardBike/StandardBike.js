@@ -5,7 +5,7 @@ const StandardBike = () => {
     const [standardBikeDetails, setstandardBikeDetails] = useState([]);
 
     useEffect(() => {
-              fetch('http://localhost:5000/standardBike')
+              fetch('https://bike-lagbe-server.vercel.app/standardBike')
               .then(res => res.json())
               .then(data =>setstandardBikeDetails(data))
     }, []);

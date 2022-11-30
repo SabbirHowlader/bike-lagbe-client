@@ -8,7 +8,7 @@ const Product = () => {
 
    
    useEffect(() => {
-         fetch('http://localhost:5000/simpleBike')
+         fetch('https://bike-lagbe-server.vercel.app/simpleBike')
          .then(res => res.json())
          .then(data =>setProductDEtails(data))
    }, []);
