@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
+import useTitle from '../../Hook/useTitle';
 
 const Register = () => {
     const { register, handleSubmit, formState:{errors} } = useForm();
@@ -10,6 +11,7 @@ const Register = () => {
     const [signUpError, setSignUpError] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
+    useTitle('Register')
 
     const from = location.state?.from?.pathname || '/login';
 

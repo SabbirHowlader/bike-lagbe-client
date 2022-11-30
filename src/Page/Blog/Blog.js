@@ -1,6 +1,8 @@
 import React from 'react';
+import useTitle from '../../Hook/useTitle';
 
 const Blog = () => {
+    useTitle('Blog')
     return (
         <div className='w-4/6 mx-auto text-left py-10'>
             <h2 className='font-bold mb-4'>1. What are the different ways to manage a state in a React application?</h2>

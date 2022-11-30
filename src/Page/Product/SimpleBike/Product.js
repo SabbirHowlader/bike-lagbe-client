@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../../Hook/useTitle';
 import BookingProduct from '../BookingModal/BookingProduct';
 import Products from './Products';
 
 const Product = () => {
    const [productDetails, setProductDEtails] = useState([]);
    const [product, setProduct] = useState(null)
+   useTitle('Product')
 
    
    useEffect(() => {
